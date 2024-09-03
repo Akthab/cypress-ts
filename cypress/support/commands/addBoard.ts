@@ -1,5 +1,4 @@
-import { Placeholders } from '../typings/placeholder';
-
+import Board from '../../../trelloapp/src/typings/board';
 declare global {
 	namespace Cypress {
 		interface Chainable {
@@ -9,7 +8,7 @@ declare global {
 			 * @example
 			 * cy.addBoard('new board')
 			 */
-			addBoard(name: string): Chainable<any>;
+			addBoard(name: string): Chainable<Board>;
 		}
 	}
 }
@@ -28,7 +27,7 @@ Cypress.Commands.add('addBoard', (name: string) => {
 		.request('POST', '/api/boards', {
 			name,
 		})
-		.its('body');
+		.its('body ');
 });
 
 // export {};

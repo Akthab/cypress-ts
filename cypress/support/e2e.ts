@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import 'cypress-real-events/support';
 import './commands/getByPlaceholder';
+import './commands/addBoard';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

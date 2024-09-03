@@ -1,0 +1,14 @@
+{
+  "boards": [
+    {
+      "name": "new board",
+      "user": 0,
+      "starred": false,
+      "created": "2024-09-03",
+      "id": 1
+    }
+  ],
+  "cards": [],
+  "lists": [],
+  "users": []
+}
