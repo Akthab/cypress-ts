@@ -17,6 +17,8 @@
 import 'cypress-real-events/support';
 import './commands/getByPlaceholder';
 import './commands/addBoard';
+import './commands/editBoard';
+import '@applitools/eyes-cypress/commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

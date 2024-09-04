@@ -25,7 +25,7 @@ const editBoard = (body: Partial<Board> & Required<Pick<Board, 'id'>>) => {
 		},
 	});
 
-	return cy.request('PATCH', `/api/boards${body.id}`, body).its('body');
+	return cy.request('PATCH', `/api/boards/${body.id}`, body).its('body');
 };
 
 Cypress.Commands.add('editBoard', editBoard);

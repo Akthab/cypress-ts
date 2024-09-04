@@ -27,7 +27,7 @@ Cypress.Commands.add('addBoard', (name: string) => {
 		.request('POST', '/api/boards', {
 			name,
 		})
-		.its('body ');
+		.its('body');
 });
 
 // export {};
